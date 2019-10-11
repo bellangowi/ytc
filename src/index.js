@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+   import React from 'react';
+   import ReactDOM from 'react-dom';
+   import SearchBar from './components/search_bar';
+ 
+  const API_KEY = 'AIzaSyB6tWgYaD4gVw0UVz31VxCqNUUHDIWNRIQ';
+  
+   //create a new component.This component should provide some HTML
+  const App = () =>{
+    return (
+      <div>
+        <SearchBar />
+      </div>
+    );
+  }
+  //put the comonent's html on the page(dom)
+ ReactDOM.render(<App />,document.querySelector('.container'));
