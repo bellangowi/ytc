@@ -2,8 +2,10 @@
    import ReactDOM from 'react-dom';
    import YTSearch from 'youtube-api-search';
    import SearchBar from './components/search_bar';
- 
-  const API_KEY = '';
+   import * as constants from './constants';
+
+   const API_KEY = constants.ApiKey;
+
   
   YTSearch({key:API_KEY,term:'surfboards',function(data){
     console.log(data);
