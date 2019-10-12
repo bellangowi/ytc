@@ -3,7 +3,7 @@
    import YTSearch from 'youtube-api-search';
    import SearchBar from './components/search_bar';
  
-  const API_KEY = 'AIzaSyBDJ9k3b53xDafH1W4VOnNsbF3TFyplnHM';
+  const API_KEY = '';
   
   YTSearch({key:API_KEY,term:'surfboards',function(data){
     console.log(data);
